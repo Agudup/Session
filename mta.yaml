@@ -1,4 +1,13 @@
-ID: Session
+
 _schema-version: '2.1'
 version: 0.0.1
-  
+ID: Session
+
+modules:
+ - name: Node
+   type: nodejs
+   path: Node
+   provides:
+    - name: Node_api
+      properties:
+         url: ${default-url}
