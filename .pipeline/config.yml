@@ -1,13 +1,13 @@
 steps:
   mtaBuild:
-    script:this
+    script:this,
     buildTarget: 'XSA'
   xsDeploy:
-    apiUrl: 'https://vhcalhdbdb.dummy.nodomain:30030' # e.g. 'https://example.org:30030'
+    apiUrl: 'https://vhcalhdbdb.dummy.nodomain:30030',
     # credentialsId: 'XS' omitted, 'XS' is the default
-    docker:
+   # docker:
       #dockerImage: '<ID_OF_THE_DOCKER_IMAGE' # for legal reasons no docker image is provided.
       # dockerPullImage: true # default: 'false'. Needs to be set to 'true' in case the image is served from a docker registry
-    loginOpts:  '--skip-ssl-validation'
-    org: 'orgname'
+    loginOpts:  '--skip-ssl-validation',
+    org: 'orgname',
     space: 'PROD'
