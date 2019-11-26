@@ -19,7 +19,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                xsDeploy script: this
+                xsDeploy script: this,apiUrl: 'https://10.79.9.18:30030'
             }
         }
     }
