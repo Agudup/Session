@@ -7,7 +7,7 @@ steps:
     org: 'orgname'
     space: 'PROD'
     # credentialsId: 'XS' omitted, 'XS' is the default
-    # docker:
-    #dockerImage: '<ID_OF_THE_DOCKER_IMAGE' # for legal reasons no docker image is provided.
+    docker:
+    dockerImage: '5f84aab33ccd'
     # dockerPullImage: true # default: 'false'. Needs to be set to 'true' in case the image is served from a docker registry
     loginOpts:  '--skip-ssl-validation'
