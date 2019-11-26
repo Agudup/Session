@@ -1,5 +1,6 @@
 steps:
   mtaBuild:
+    script:this
     buildTarget: 'XSA'
   xsDeploy:
     apiUrl: 'https://vhcalhdbdb.dummy.nodomain:30030' # e.g. 'https://example.org:30030'
