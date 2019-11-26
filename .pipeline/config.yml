@@ -7,6 +7,6 @@ steps:
     docker:
       dockerImage: '5f84aab33ccd' # for legal reasons no docker image is provided.
       # dockerPullImage: true # default: 'false'. Needs to be set to 'true' in case the image is served from a docker registry
-    loginOpts: '' # during setup for non-productive builds we might set here. '--skip-ssl-validation'
+    loginOpts: '--skip-ssl-validation'
     org: 'orgname'
     space: 'PROD'
