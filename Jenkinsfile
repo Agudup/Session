@@ -14,7 +14,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                mtaBuild script: this
+                mtaBuild script: this, buildTarget: 'XSA'
             }
         }
         stage('deploy') {
